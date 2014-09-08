@@ -33,6 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A77750B51925C2770008B94D /* ProbablyEngine.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ProbablyEngine.entitlements; sourceTree = "<group>"; };
 		AE97F44E17A4EAFE00D22A38 /* ProbablyEngine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProbablyEngine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE97F45217A4EAFE00D22A38 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AE97F45517A4EAFE00D22A38 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -107,6 +108,7 @@
 		AE97F45817A4EAFE00D22A38 /* ProbablyEngine */ = {
 			isa = PBXGroup;
 			children = (
+				A77750B51925C2770008B94D /* ProbablyEngine.entitlements */,
 				AE97F46417A4EAFE00D22A38 /* AppDelegate.h */,
 				AE97F46517A4EAFE00D22A38 /* AppDelegate.m */,
 				AE97F46717A4EAFE00D22A38 /* MainMenu.xib */,
@@ -156,6 +158,15 @@
 			attributes = {
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = BenPhelps.me;
+				TargetAttributes = {
+					AE97F44D17A4EAFE00D22A38 = {
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
 			};
 			buildConfigurationList = AE97F44817A4EAFE00D22A38 /* Build configuration list for PBXProject "ProbablyEngine" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -281,6 +292,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = ProbablyEngine/ProbablyEngine.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_POSTPROCESSING = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -305,6 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_ENTITLEMENTS = ProbablyEngine/ProbablyEngine.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_POSTPROCESSING = YES;
 				FRAMEWORK_SEARCH_PATHS = (
